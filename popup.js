@@ -29,7 +29,7 @@ function convert(ck) {
 
 function updateCookies() {
   getCookies((cookieString) => {
-    document.querySelector("#cookies").innerHTML = cookieString ? cookieString : "Chưa Đăng Nhập Facebook!";
+    document.querySelector("#cookies").innerHTML = cookieString ? cookieString : "Not Login to Facebook yet!";
     const fbstate = convert(cookieString);
     document.querySelector("#fbstate").innerHTML = JSON.stringify(fbstate, null, 2);
   });
